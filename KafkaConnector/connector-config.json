@@ -1,0 +1,11 @@
+{
+    "name": "mongodb-location-sink",
+    "config": {
+      "connector.class": "com.example.kafka.connect.MongoDBLocationSinkConnector",
+      "tasks.max": "1",
+      "topics": "location-updates",
+      "mongodb.uri": "mongodb+srv://username:password@your-mongodb-atlas-cluster.mongodb.net",
+      "key.converter": "org.apache.kafka.connect.storage.StringConverter",
+      "value.converter": "org.apache.kafka.connect.storage.StringConverter"
+    }
+  }
